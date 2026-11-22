@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>梁苏瑜 · 个人作品集 2026 / Liang Suyu Portfolio</title>
+<meta name="description" content="梁苏瑜，艺术设计（服装方向）在读，求职方向：设计师助理。中英对照作品集，含系列设计、立裁与成衣。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2312110f'/%3E%3Ctext x='16' y='24' font-family='Georgia,serif' font-size='21' fill='%23f4f2ed' text-anchor='middle'%3EL%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://miaoda.feishu.cn">
+<link rel="preconnect" href="https://sf3-scmcdn-cn.feishucdn.com" crossorigin>
+<link rel="stylesheet" href="https://miaoda.feishu.cn/fonts/css2?family=Archivo:wght@400;500;600&family=Noto+Serif+SC:wght@500;600&display=swap">
+<style>
+:root{
+  --ink:#12110f;
+  --ink-soft:#3f3b35;
+  --muted:#7b756a;
+  --paper:#f4f2ed;
+  --paper-2:#ebe8e1;
+  --line:#d7d2c8;
+  --sans:"Archivo","Helvetica Neue","PingFang SC","Microsoft YaHei","Source Han Sans SC",sans-serif;
+  --serif:"Noto Serif SC","Songti SC","STSong","SimSun",serif;
+  --pad:20px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font:400 16px/1.75 var(--sans);
+  -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+  overflow-x:hidden;
+}
+/* 纸面颗粒：极轻，仅作材质 */
+body::after{
+  content:"";position:fixed;inset:0;z-index:4;pointer-events:none;opacity:.032;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer}
+h1,h2,h3,h4,p,ul,dl,dd{margin:0;padding:0}
+ul{list-style:none}
+.wrap{width:100%;max-width:1400px;margin:0 auto;padding:0 var(--pad)}
+section[id]{scroll-margin-top:70px}
+.en{font:500 11px/1 var(--sans);letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
+.meta{font:500 11px/1.4 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+
+/* ===== 顶栏 ===== */
+.top{position:sticky;top:0;z-index:20;background:var(--paper);border-bottom:1px solid var(--line)}
+.top-in{display:flex;align-items:center;justify-content:space-between;height:58px;gap:14px}
+.mark{display:flex;align-items:baseline;gap:8px;font:600 15px/1 var(--serif);letter-spacing:.02em;white-space:nowrap}
+.mark .marklat{font:500 9px/1 var(--sans);letter-spacing:.2em;color:var(--muted)}
+.nav{display:flex;align-items:center;gap:16px}
+.nav a{font:500 13px/1 var(--sans);letter-spacing:.04em;color:var(--ink-soft);padding:6px 0;position:relative}
+.nav a::after{content:"";position:absolute;left:0;right:100%;bottom:0;height:1px;background:var(--ink);transition:right .35s ease}
+.nav a:hover::after,.nav a.active::after{right:0}
+.nav a small{display:none;font:500 9px/1 var(--sans);letter-spacing:.14em;color:var(--muted);margin-left:4px}
+.top-year{font:500 11px/1 var(--sans);letter-spacing:.2em;color:var(--muted);display:none}
+
+/* ===== 首屏 ===== */
+.hero{padding:44px 0 0}
+.eyebrow{font:500 10px/1 var(--sans);letter-spacing:.24em;text-transform:uppercase;color:var(--muted)}
+.name{
+  font:600 clamp(62px,15vw,168px)/.92 var(--serif);
+  letter-spacing:-.02em;margin:22px 0 0;
+}
+.latin{margin-top:20px;font:500 11px/1 var(--sans);letter-spacing:.34em;color:var(--muted);text-transform:uppercase}
+.role{margin-top:24px;font:500 17px/1.5 var(--sans);letter-spacing:.02em}
+.role small{display:block;margin-top:6px;font:500 10px/1.4 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.intro{margin-top:18px;max-width:34ch;font-size:16px;line-height:1.8;color:var(--ink-soft)}
+
+.profile{margin-top:36px;padding-top:18px;border-top:1px solid var(--line)}
+.profile p.txt{font:400 13.5px/1.85 var(--sans);color:var(--ink-soft);max-width:34em}
+.profile .sign{margin-top:20px;font:500 9px/1.6 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+
+/* 数据条 */
+.facts{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--ink);margin-top:40px}
+.fact{padding:16px 0 20px;border-bottom:1px solid var(--line)}
+.fact:nth-child(odd){padding-right:14px}
+.fact:nth-child(even){padding-left:14px;border-left:1px solid var(--line)}
+.fact dt{font:500 9px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.fact dt em{font-style:normal;display:block;margin-top:4px;font-size:8px;letter-spacing:.16em;color:#a39d92}
+.fact dd{margin:0;margin-top:10px;font:500 15px/1.45 var(--sans)}
+.fact dd span{color:var(--muted);font-size:12px;letter-spacing:.04em}
+.fact dd small{display:block;color:var(--muted);font:500 10px/1.5 var(--sans);letter-spacing:.08em;margin-top:3px}
+
+/* ===== 通用区块 ===== */
+.sec{padding:64px 0 0}
+.sec-head{display:grid;grid-template-columns:1fr;gap:6px;padding-bottom:16px;border-bottom:1px solid var(--ink)}
+.num{font:600 clamp(30px,7vw,44px)/1 var(--sans);letter-spacing:-.02em}
+.sec-title{font:600 clamp(26px,4.6vw,40px)/1.1 var(--serif);letter-spacing:-.01em;display:flex;flex-wrap:wrap;align-items:baseline;gap:10px}
+.sec-title .en{font-size:10px;letter-spacing:.24em}
+.sec-meta{font:500 10px/1.4 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+.sec-note{margin-top:18px;max-width:52ch;color:var(--ink-soft);font-size:14px}
+.sec-note em{display:block;font-style:normal;margin-top:6px;font-size:12px;line-height:1.7;color:var(--muted);letter-spacing:.02em}
+
+/* 双语对照块 */
+.pair{display:grid;grid-template-columns:1fr;gap:16px}
+.pair .en-txt{font:400 13.5px/1.85 var(--sans);color:var(--ink-soft);letter-spacing:.005em}
+
+/* 分组标题 */
+.group-head{display:flex;align-items:baseline;gap:12px;margin:36px 0 16px;padding-bottom:10px;border-bottom:1px solid var(--line)}
+.group-head span:first-child{font:600 12px/1 var(--sans);letter-spacing:.05em}
+.group-head h3{font:600 17px/1 var(--serif);letter-spacing:.02em}
+.group-head h3 i{font-style:normal;font:500 9px/1 var(--sans);letter-spacing:.18em;color:var(--muted);text-transform:uppercase;margin-left:8px}
+.group-head .meta{margin-left:auto}
+
+/* 作品卡 */
+.work{cursor:pointer;position:relative;outline-offset:6px}
+.work-media{display:block;overflow:hidden;background:#fff;border:1px solid var(--line);transition:border-color .4s ease}
+.work-media img{width:100%;height:auto;transition:transform .9s cubic-bezier(.22,.61,.36,1)}
+.work:hover .work-media img,.work:focus-visible .work-media img{transform:scale(1.025)}
+.work:hover .work-media{border-color:var(--ink)}
+.work-meta{display:grid;grid-template-columns:auto 1fr;gap:1px 12px;padding:12px 0 0}
+.work-meta .idx{font:500 11px/1.6 var(--sans);letter-spacing:.12em;color:var(--muted);font-variant-numeric:tabular-nums}
+.work-meta .ttl{font:500 15px/1.4 var(--sans);letter-spacing:.01em}
+.work-meta .ttl-en{grid-column:2;font:500 10px/1.5 var(--sans);letter-spacing:.13em;text-transform:uppercase;color:var(--muted);margin-top:4px}
+.work-meta .tag{grid-column:2;font:500 9px/1.5 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:#a39d92;margin-top:5px}
+.work-meta .desc{grid-column:1/-1;margin-top:9px;font-size:13px;line-height:1.7;color:var(--ink-soft);max-width:42ch}
+.work-meta .desc-en{grid-column:1/-1;margin-top:5px;font-size:12px;line-height:1.65;color:var(--muted);max-width:44ch}
+
+.grid-series{display:grid;grid-template-columns:1fr;gap:28px 24px}
+.grid-toile{display:grid;grid-template-columns:1fr 1fr;gap:24px 16px}
+.grid-toile .work-media{aspect-ratio:4/5}
+.grid-toile .work-media img{height:100%;object-fit:cover;object-position:center}
+.grid-toile .work-meta .ttl{font-size:13px}
+.grid-toile .work-meta .desc{font-size:12px;max-width:36ch}
+
+/* ===== 能力 ===== */
+.cap{display:grid;grid-template-columns:1fr;gap:40px;margin-top:26px}
+.cap h4{font:500 11px/1.6 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+.cap h4 i{font-style:normal;display:block;letter-spacing:.16em;font-size:9px;color:#a39d92;margin-top:3px}
+.scores li{display:grid;grid-template-columns:1fr auto;gap:4px 14px;padding:13px 0;border-bottom:1px solid var(--line)}
+.scores .cname{font-size:14px}
+.scores .cval{font:500 15px/1 var(--sans);font-variant-numeric:tabular-nums}
+.scores .cname-en{grid-column:1/-1;font:500 9px/1.5 var(--sans);letter-spacing:.13em;text-transform:uppercase;color:var(--muted)}
+.scores .cbar{grid-column:1/-1;height:2px;background:var(--line);position:relative;margin-top:6px}
+.scores .cbar i{position:absolute;left:0;top:0;bottom:0;background:var(--ink);width:var(--w)}
+.scores li:first-child{border-top:1px solid var(--line)}
+
+.dl dt{font:500 10px/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--muted);padding-top:16px}
+.dl dt i{font-style:normal;color:#a39d92;margin-left:8px;font-size:8.5px}
+.dl dd{margin:10px 0 0;font-size:14px;line-height:1.8;padding-bottom:16px;border-bottom:1px solid var(--line)}
+.dl dd:last-child{border-bottom:0;padding-bottom:0}
+.dl .lv{color:var(--muted);font-size:11px;letter-spacing:.06em;margin-left:6px;white-space:nowrap}
+.dl .en-txt{display:block;margin-top:4px;font-size:11.5px;line-height:1.7;color:var(--muted);letter-spacing:.02em}
+
+/* ===== 教育 / 荣誉 ===== */
+.edu{display:grid;grid-template-columns:1fr;gap:36px;margin-top:26px}
+.edu-year{font:500 11px/1 var(--sans);letter-spacing:.16em;color:var(--muted);font-variant-numeric:tabular-nums}
+.edu-school{margin-top:14px;font:600 clamp(20px,3.6vw,28px)/1.25 var(--serif);letter-spacing:.01em}
+.edu-school-en{margin-top:6px;font:500 10px/1.5 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.edu-major{margin-top:12px;font-size:14px;color:var(--ink-soft)}
+.edu-major small{display:block;font:400 11.5px/1.6 var(--sans);color:var(--muted);margin-top:3px}
+.edu-gpa{margin-top:18px;display:flex;gap:26px;flex-wrap:wrap;padding-top:16px;border-top:1px solid var(--line)}
+.edu-gpa b{font:600 19px/1 var(--sans);letter-spacing:-.01em}
+.edu-gpa small{display:block;margin-top:7px;font:500 9px/1.3 var(--sans);letter-spacing:.16em;color:var(--muted);text-transform:uppercase}
+
+.honors li{display:grid;grid-template-columns:52px 1fr;gap:12px;padding:12px 0;border-bottom:1px solid var(--line);font-size:14px;line-height:1.6}
+.honors li span{font:500 10px/2 var(--sans);letter-spacing:.1em;color:var(--muted);font-variant-numeric:tabular-nums}
+.honors li small{display:block;font:400 11px/1.6 var(--sans);letter-spacing:.04em;color:var(--muted);margin-top:2px}
+.honors li:first-child{border-top:1px solid var(--line)}
+
+/* ===== 自述 + 联系 ===== */
+.about{display:grid;grid-template-columns:1fr;gap:26px;margin-top:28px}
+.statement{font:500 clamp(18px,2.8vw,23px)/1.75 var(--serif);letter-spacing:.01em;max-width:28em}
+.statement em{font-style:normal;border-bottom:1px solid var(--ink)}
+.contact{border-top:1px solid var(--ink);padding-top:18px}
+.contact .mail{display:block;font:500 clamp(16px,2.5vw,23px)/1.4 var(--sans);letter-spacing:-.01em;border-bottom:1px solid var(--line);padding-bottom:12px;width:max-content;max-width:100%;word-break:break-all}
+.contact .mail:hover{border-color:var(--ink)}
+.contact .mail span{font:500 9px/1 var(--sans);letter-spacing:.2em;color:var(--muted);display:block;margin-bottom:10px;text-transform:uppercase}
+.contact .mail span i{font-style:normal;color:#a39d92;margin-left:6px}
+.contact-row{display:grid;grid-template-columns:1fr auto;gap:8px;padding:12px 0;border-bottom:1px solid var(--line);font-size:14px;align-items:baseline}
+.contact-row .lab{color:var(--muted);font:500 10px/1.8 var(--sans);letter-spacing:.14em;text-transform:uppercase}
+.contact-row .lab i{font-style:normal;display:block;font-size:8.5px;color:#a39d92;letter-spacing:.16em}
+.contact-row .val{text-align:right}
+
+/* ===== 页脚 ===== */
+.foot{margin-top:72px;border-top:1px solid var(--ink);padding:20px 0 40px;display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;align-items:baseline}
+.foot p{font:500 10px/1.6 var(--sans);letter-spacing:.14em;color:var(--muted);text-transform:uppercase}
+.foot p i{font-style:normal;display:block;letter-spacing:.1em;color:#a39d92;text-transform:none;margin-top:4px}
+
+/* ===== 灯箱 ===== */
+.lb{position:fixed;inset:0;z-index:32;background:#0e0d0c;color:var(--paper);display:grid;grid-template-rows:auto 1fr auto}
+.lb[hidden]{display:none}
+.lb-bar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 18px;border-bottom:1px solid rgba(244,242,237,.18)}
+.lb-idx{font:500 10px/1 var(--sans);letter-spacing:.2em;color:rgba(244,242,237,.6)}
+.lb-cap{font:500 12px/1.5 var(--sans);letter-spacing:.02em;flex:1;text-align:center;padding:0 10px}
+.lb-close{font:500 12px/1 var(--sans);letter-spacing:.14em;color:var(--paper);border:1px solid rgba(244,242,237,.35);padding:9px 12px;transition:background .3s,color .3s}
+.lb-close:hover{background:var(--paper);color:var(--ink)}
+.lb-stage{display:grid;place-items:center;padding:18px;min-height:0}
+.lb-stage img{max-width:100%;max-height:100%;object-fit:contain}
+.lb-foot{padding:12px 18px 20px;border-top:1px solid rgba(244,242,237,.18);font:500 9px/1.5 var(--sans);letter-spacing:.16em;color:rgba(244,242,237,.55);text-transform:uppercase}
+body.lock{overflow:hidden}
+
+/* 滚动显现 */
+.reveal{opacity:0;transform:translateY(16px);transition:opacity .9s ease,transform .9s cubic-bezier(.22,.61,.36,1)}
+.reveal.in{opacity:1;transform:none}
+
+/* ===== 768 ===== */
+@media (min-width:768px){
+  :root{--pad:32px}
+  .top-in{height:64px}
+  .nav{gap:22px}
+  .nav a small{display:inline}
+  .top-year{display:block}
+  .hero{padding:64px 0 0}
+  .facts{grid-template-columns:repeat(4,1fr);margin-top:56px}
+  .fact{padding:20px 18px 24px}
+  .fact:nth-child(odd){padding-right:18px}
+  .fact:nth-child(even){padding-left:18px}
+  .fact+.fact{border-left:1px solid var(--line)}
+  .sec{padding:92px 0 0}
+  .sec-head{grid-template-columns:auto 1fr auto;align-items:end;gap:22px;padding-bottom:20px}
+  .sec-title{font-size:clamp(28px,3.2vw,38px)}
+  .pair{grid-template-columns:1fr 1fr;gap:44px;align-items:start}
+  .pair .en-txt{border-left:1px solid var(--line);padding-left:40px}
+  .grid-series{grid-template-columns:1fr 1fr;gap:40px 32px}
+  .grid-toile{grid-template-columns:repeat(3,1fr);gap:32px 24px}
+  .cap{grid-template-columns:1.15fr .85fr;gap:56px}
+  .edu{grid-template-columns:1.05fr .95fr;gap:56px}
+  .about{grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+  .about .contact{border-top:0;border-left:1px solid var(--line);padding:0 0 0 40px}
+  .foot{margin-top:96px}
+}
+/* ===== 1024 ===== */
+@media (min-width:1024px){
+  .hero-grid{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:64px;align-items:start}
+  .profile{margin-top:56px;border-top:0;padding-top:0;border-left:1px solid var(--line);padding-left:40px}
+}
+/* ===== 1180 ===== */
+@media (min-width:1180px){
+  :root{--pad:48px}
+  .hero-grid{grid-template-columns:minmax(0,1fr) 380px;gap:84px}
+  .name{font-size:clamp(120px,12vw,176px)}
+  .intro{font-size:17px}
+  .sec{padding:118px 0 0}
+  .grid-series{gap:52px 40px}
+  .work-meta .ttl{font-size:16px}
+  .grid-toile{gap:40px 28px}
+  .lb-stage{padding:28px 40px}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important;scroll-behavior:auto}
+  .reveal{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<!-- ===== 顶栏 ===== -->
+<header class="top">
+  <div class="wrap top-in">
+    <a class="mark" href="#top">梁苏瑜<span class="marklat">LIANG SUYU</span></a>
+    <nav class="nav" aria-label="页面导航">
+      <a href="#works">作品<small>Works</small></a>
+      <a href="#skills">能力<small>Skills</small></a>
+      <a href="#edu">教育<small>Education</small></a>
+      <a href="#contact">联系<small>Contact</small></a>
+    </nav>
+    <div class="top-year">Portfolio 2026</div>
+  </div>
+</header>
+
+<!-- ===== 首屏 ===== -->
+<section class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div class="hero-main reveal">
+      <p class="eyebrow">Portfolio — 2026 / 南宁 · 广西 · Nanning, Guangxi</p>
+      <h1 class="name">梁苏瑜</h1>
+      <p class="latin">Liang Suyu</p>
+      <p class="role">设计师助理 · 服装设计方向<small>Design Assistant · Fashion Design</small></p>
+      <p class="intro">艺术设计（服装方向）在读，2027 届。把概念做成能穿的结构——从情绪板、款式图，到人台立裁与成衣。</p>
+    </div>
+
+    <div class="profile reveal">
+      <p class="en">Profile</p>
+      <p class="txt" style="margin-top:14px;">Art &amp; Design student, fashion pathway, class of 2027. I turn concepts into wearable structure — from mood board and sketches to draping on the stand and finished garments.</p>
+      <p class="sign">B. 2006 · Nanning<br>Portfolio 2026</p>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <dl class="facts">
+      <div class="fact"><dt>出生<em>Born</em></dt><dd>2006.01</dd></div>
+      <div class="fact"><dt>所在地<em>Base</em></dt><dd>南宁 <span>Nanning</span></dd></div>
+      <div class="fact"><dt>学业<em>Academic</em></dt><dd>GPA 3.8 <span>/4.0</span><small>专业前 10% · Top 10%</small></dd></div>
+      <div class="fact"><dt>英语<em>English</em></dt><dd>CET-6 538<small>大学英语六级</small></dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ===== 01 作品 ===== -->
+<section class="sec" id="works">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="num">01</span>
+      <h2 class="sec-title">作品 <span class="en">Selected Works</span></h2>
+      <span class="sec-meta">12 Pieces · 2025—2027</span>
+    </div>
+    <p class="sec-note">六组系列设计，六件立裁与成衣。点击任意一张可放大查看。<em>Six collection sheets and six toile / garment pieces. Click any image to enlarge.</em></p>
+
+    <div class="group-head"><span>A</span><h3>系列设计<i>Collection Sheets</i></h3><span class="meta">01 — 06</span></div>
+    <div class="grid-series">
+
+      <figure class="work reveal" tabindex="0" role="button" aria-label="放大查看：情绪板 · 精神动荡"
+        data-src="assets/work-01-moodboard.jpg" data-idx="01" data-cap="情绪板 · 精神动荡 — Mood Board · Mental Turmoil / 2026">
+        <span class="work-media"><img src="assets/work-01-moodboard.jpg" alt="情绪板：躯体破损、医疗语境与材料拼贴" width="1099" height="679"></span>
+        <span class="work-meta">
+          <span class="idx">01</span>
+          <span class="ttl">情绪板 · 精神动荡</span>
+          <span class="ttl-en">Mood Board · Mental Turmoil</span>
+          <span class="tag">Concept Board / 2026</span>
+          <span class="desc">躯体破损、医疗语境与材料三条线索并置，把「心灵如受伤的躯体」拆成可执行的视觉母题。</span>
+          <span class="desc-en">Body damage, medical imagery and material as three threads — turning a mind inside a wounded body into a working motif.</span>
+        </span>
+      </figure>
+
+      <figure class="work reveal" tabindex="0" role="button" aria-label="放大查看：精神动荡 · 2027 春夏"
+        data-src="assets/work-02-ss2027.jpg" data-idx="02" data-cap="精神动荡 · SS2027 系列 — Mental Turmoil · SS2027 / 2027">
+        <span class="work-media"><img src="assets/work-02-ss2027.jpg" alt="Mental Turmoil SS2027 四套造型效果图" width="1437" height="798"></span>
+        <span class="work-meta">
+          <span class="idx">02</span>
+          <span class="ttl">精神动荡 · SS2027 系列</span>
+          <span class="ttl-en">Mental Turmoil · SS2027</span>
+          <span class="tag">Collection / 2027</span>
+          <span class="desc">骨骼、绷带与撕裂结构入衣：白色为底、红色为伤、黑色收住轮廓，四套造型共用一套结构语言。</span>
+          <span class="desc-en">Bones, bandages and torn structures: white as ground, red as wound, black holding the silhouette.</span>
+        </span>
+      </figure>
+
+      <figure class="work reveal" tabindex="0" role="button" aria-label="放大查看：医护主题 · 12 套手绘"
+        data-src="assets/work-03-medical.jpg" data-idx="03" data-cap="医护主题 · 12 套手绘 — Medical Series · 12 Sketches / 2026">
+        <span class="work-media"><img src="assets/work-03-medical.jpg" alt="医护主题十二套手绘设计稿" width="1326" height="915"></span>
+        <span class="work-meta">
+          <span class="idx">03</span>
+          <span class="ttl">医护主题 · 12 套手绘</span>
+          <span class="ttl-en">Medical Series · 12 Sketches</span>
+          <span class="tag">Sketches / 2026</span>
+          <span class="desc">病号服、十字符号与绷带重组，在宽松与包裹之间测试廓形比例。</span>
+          <span class="desc-en">Patient gowns, crosses and bandages recombined; testing volume between loose and wrapped shapes.</span>
+        </span>
+      </figure>
+
+      <figure class="work reveal" tabindex="0" role="button" aria-label="放大查看：Supreme × 街头魔法师"
+        data-src="assets/work-04-supreme.jpg" data-idx="04" data-cap="Supreme × 街头魔法师 — Supreme × Street Magician / 2026">
+        <span class="work-media"><img src="assets/work-04-supreme.jpg" alt="Supreme 联名街头魔法师系列款式图" width="883" height="622"></span>
+        <span class="work-meta">
+          <span class="idx">04</span>
+          <span class="ttl">Supreme × 街头魔法师</span>
+          <span class="ttl-en">Supreme × Street Magician</span>
+          <span class="tag">Sketches / 2026</span>
+          <span class="desc">街头宽松廓形与斗篷、系带、长袍嫁接，红黑白三色控制整组的节奏。</span>
+          <span class="desc-en">Street volume grafted with cloak, ties and robe; red, black and white set the rhythm.</span>
+        </span>
+      </figure>
+
+      <figure class="work reveal" tabindex="0" role="button" aria-label="放大查看：绿 · 黄系列 16 套"
+        data-src="assets/work-05-green.jpg" data-idx="05" data-cap="绿 · 黄系列 16 套 — Green &amp; Yellow · 16 Looks / 2026">
+        <span class="work-media"><img src="assets/work-05-green.jpg" alt="绿黄系列十六套手绘设计稿" width="1628" height="1125"></span>
+        <span class="work-meta">
+          <span class="idx">05</span>
+          <span class="ttl">绿 · 黄系列 16 套</span>
+          <span class="ttl-en">Green &amp; Yellow · 16 Looks</span>
+          <span class="tag">Sketches / 2026</span>
+          <span class="desc">条纹与不规则下摆贯穿全组，荧光黄只做提亮，靠灰绿压住整体。</span>
+          <span class="desc-en">Stripes and uneven hems across the group; fluorescent yellow as accent only, held by grey-green.</span>
+        </span>
+      </figure>
+
+      <figure class="work reveal" tabindex="0" role="button" aria-label="放大查看：2026 秋冬系列"
+        data-src="assets/work-06-fw2026.jpg" data-idx="06" data-cap="2026 秋冬系列 for Yuan YU — Design Collection FW2026 / 2026">
+        <span class="work-media"><img src="assets/work-06-fw2026.jpg" alt="Design Collection FW2026 四套造型效果图" width="1428" height="802"></span>
+        <span class="work-meta">
+          <span class="idx">06</span>
+          <span class="ttl">2026 秋冬系列 for Yuan YU</span>
+          <span class="ttl-en">Design Collection · FW2026</span>
+          <span class="tag">Collection / 2026</span>
+          <span class="desc">四套秋冬造型：透明纱、宽肩与长外套叠穿，绿色为主、黄色提亮。</span>
+          <span class="desc-en">Four autumn/winter looks: sheer tulle, wide shoulders and long coats layered.</span>
+        </span>
+      </figure>
+
+    </div>
+
+    <div class="group-head"><span>B</span><h3>立裁与成衣<i>Toile &amp; Garment</i></h3><span class="meta">07 — 12</span></div>
+    <div class="grid-toile">
+
+      <figure class="work reveal" tabindex="0" role="button" aria-label="放大查看：立裁 · 褶皱与肩线"
+        data-src="assets/work-07-toile-mid.jpg" data-idx="07" data-cap="立裁 · 褶皱与肩线 — Toile · Folds &amp; Shoulders / 2026">
+        <span class="work-media"><img src="assets/work-07-toile-mid.jpg" alt="白坯人台立裁：肩部与胸部褶量" width="226" height="466"></span>
+        <span class="work-meta">
+          <span class="idx">07</span><span class="ttl">立裁 · 褶皱与肩线</span>
+          <span class="ttl-en">Toile · Folds &amp; Shoulders</span>
+          <span class="tag">Toile / 2026</span>
+          <span class="desc">白坯阶段验证肩部起翘与胸腰省的转借。</span>
+          <span class="desc-en">Muslin stage — shoulder lift and the transfer of bust-waist darts.</span>
+        </span>
+      </figure>
+
+      <figure class="work reveal" tabindex="0" role="button" aria-label="放大查看：立裁 · 省道与结构线"
+        data-src="assets/work-08-toile-right.jpg" data-idx="08" data-cap="立裁 · 省道与结构线 — Toile · Darts &amp; Structure / 2026">
+        <span class="work-media"><img src="assets/work-08-toile-right.jpg" alt="人台标线：省道位置与布料固定" width="228" height="466"></span>
+        <span class="work-meta">
+          <span class="idx">08</span><span class="ttl">立裁 · 省道与结构线</span>
+          <span class="ttl-en">Toile · Darts &amp; Structure</span>
+          <span class="tag">Toile / 2026</span>
+          <span class="desc">在标线人台上核对省道位置与省量分配。</span>
+          <span class="desc-en">Checking dart placement and distribution on a marked dress form.</span>
+        </span>
+      </figure>
+
+      <figure class="work reveal" tabindex="0" role="button" aria-label="放大查看：蓝白水手领连衣裙"
+        data-src="assets/work-09-sailor.jpg" data-idx="09" data-cap="蓝白水手领连衣裙 — Sailor-Collar Dress / 2026">
+        <span class="work-media"><img src="assets/work-09-sailor.jpg" alt="蓝白水手领连衣裙成衣" width="254" height="390"></span>
+        <span class="work-meta">
+          <span class="idx">09</span><span class="ttl">蓝白水手领连衣裙</span>
+          <span class="ttl-en">Sailor-Collar Dress</span>
+          <span class="tag">Garment / 2026</span>
+          <span class="desc">宽幅水手领与活褶裙摆，控制领口与下摆的体积关系。</span>
+          <span class="desc-en">Wide sailor collar with a pleated skirt; balancing neckline and hem volume.</span>
+        </span>
+      </figure>
+
+      <figure class="work reveal" tabindex="0" role="button" aria-label="放大查看：米色荷叶边礼服"
+        data-src="assets/work-10-beige.jpg" data-idx="10" data-cap="米色荷叶边礼服 — Beige Ruffle Dress / 2026">
+        <span class="work-media"><img src="assets/work-10-beige.jpg" alt="米色荷叶边礼服成衣" width="216" height="470"></span>
+        <span class="work-meta">
+          <span class="idx">10</span><span class="ttl">米色荷叶边礼服</span>
+          <span class="ttl-en">Beige Ruffle Dress</span>
+          <span class="tag">Garment / 2026</span>
+          <span class="desc">抽褶与三层荷叶边叠压，逐层控制落差。</span>
+          <span class="desc-en">Ruching and three tiers of ruffles, controlling the drop of each layer.</span>
+        </span>
+      </figure>
+
+      <figure class="work reveal" tabindex="0" role="button" aria-label="放大查看：黑色上衣与蕾丝半裙"
+        data-src="assets/work-11-lace.jpg" data-idx="11" data-cap="黑色上衣 × 蕾丝半裙 — Black Top × Lace Skirt / 2026">
+        <span class="work-media"><img src="assets/work-11-lace.jpg" alt="黑色不对称上衣与蕾丝半裙成衣" width="278" height="328"></span>
+        <span class="work-meta">
+          <span class="idx">11</span><span class="ttl">黑色上衣 × 蕾丝半裙</span>
+          <span class="ttl-en">Black Top × Lace Skirt</span>
+          <span class="tag">Garment / 2026</span>
+          <span class="desc">不对称插片收腰，蕾丝花型承住黑色上装的重量。</span>
+          <span class="desc-en">An asymmetric panel shapes the waist; lace carries the weight of the black top.</span>
+        </span>
+      </figure>
+
+      <figure class="work reveal" tabindex="0" role="button" aria-label="放大查看：灰色西装外套"
+        data-src="assets/work-12-suit.jpg" data-idx="12" data-cap="灰色西装外套 — Grey Blazer / 2026">
+        <span class="work-media"><img src="assets/work-12-suit.jpg" alt="灰色西装外套成衣，手针标记" width="275" height="388"></span>
+        <span class="work-meta">
+          <span class="idx">12</span><span class="ttl">灰色西装外套</span>
+          <span class="ttl-en">Grey Blazer</span>
+          <span class="tag">Tailoring / 2026</span>
+          <span class="desc">单排两粒扣、贴袋与手针标记，练习领面与袖山的结构。</span>
+          <span class="desc-en">Single-breasted blazer with patch pockets and hand-stitch marks — collar and sleeve-head study.</span>
+        </span>
+      </figure>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== 02 能力 ===== -->
+<section class="sec" id="skills">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="num">02</span>
+      <h2 class="sec-title">能力 <span class="en">Skills</span></h2>
+      <span class="sec-meta">Scores · Tools · Language</span>
+    </div>
+
+    <div class="cap">
+      <div class="reveal">
+        <h4>核心课程 · 满分 100<i>Core Courses · out of 100</i></h4>
+        <ul class="scores">
+          <li><span class="cname">服装制图与工艺基础</span><span class="cval">94</span><span class="cname-en">Pattern Making &amp; Craft</span><span class="cbar"><i style="--w:94%"></i></span></li>
+          <li><span class="cname">服装款式效果图表达</span><span class="cval">93</span><span class="cname-en">Fashion Illustration</span><span class="cbar"><i style="--w:93%"></i></span></li>
+          <li><span class="cname">设计色彩</span><span class="cval">93</span><span class="cname-en">Colour Theory</span><span class="cbar"><i style="--w:93%"></i></span></li>
+          <li><span class="cname">服装计算机辅助设计</span><span class="cval">91</span><span class="cname-en">CAD for Fashion Design</span><span class="cbar"><i style="--w:91%"></i></span></li>
+          <li><span class="cname">服装设计基础</span><span class="cval">90</span><span class="cname-en">Introduction to Fashion Design</span><span class="cbar"><i style="--w:90%"></i></span></li>
+          <li><span class="cname">设计素描</span><span class="cval">88</span><span class="cname-en">Design Drawing</span><span class="cbar"><i style="--w:88%"></i></span></li>
+        </ul>
+      </div>
+
+      <dl class="dl reveal">
+        <dt>软件<i>Software</i></dt>
+        <dd>Photoshop<span class="lv">熟练</span> · Illustrator<span class="lv">熟练</span> · 画世界 Pro<span class="lv">板绘</span>
+          <span class="en-txt">Photoshop · Illustrator · Huashijie Pro (digital painting)</span></dd>
+        <dt>办公<i>Office</i></dt>
+        <dd>Word / Excel / PPT<span class="lv">熟练</span> · 计算机二级 MS Office
+          <span class="en-txt">Word, Excel, PPT · NCRE Level 2 (MS Office)</span></dd>
+        <dt>语言<i>Language</i></dt>
+        <dd>普通话 · 桂柳话<span class="lv">精通</span>
+          <span class="en-txt">Mandarin &amp; Guiliu dialect — native</span></dd>
+        <dd>英语<span class="lv">CET-6 538</span> · 日语<span class="lv">粗通</span> · 意大利语<span class="lv">粗通</span>
+          <span class="en-txt">English (CET-6 538) · Japanese (basic) · Italian (basic)</span></dd>
+        <dt>方向<i>Focus</i></dt>
+        <dd>服装设计 · 款式图与效果图 · 立裁与工艺 · 面料与色彩企划
+          <span class="en-txt">Fashion design · Illustration · Draping &amp; construction · Colour and fabric research</span></dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 03 教育 ===== -->
+<section class="sec" id="edu">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="num">03</span>
+      <h2 class="sec-title">教育 <span class="en">Education &amp; Honors</span></h2>
+      <span class="sec-meta">2024 — 2027</span>
+    </div>
+
+    <div class="edu">
+      <div class="reveal">
+        <p class="edu-year">2024.09 — 2027.07</p>
+        <h3 class="edu-school">广西南宁职业技术大学</h3>
+        <p class="edu-school-en">Guangxi Nanning Polytechnic</p>
+        <p class="edu-major">艺术设计 · 服装方向（专科）<small>Art &amp; Design, Fashion Pathway — College Diploma</small></p>
+        <div class="edu-gpa">
+          <div><b>3.8 / 4.0</b><small>GPA</small></div>
+          <div><b>前 10%</b><small>Top 10% · 180 students</small></div>
+          <div><b>538</b><small>CET-6</small></div>
+        </div>
+      </div>
+
+      <ul class="honors reveal">
+        <li><span>2024</span><div>校级「会计技能竞赛」一等奖<small>Campus Accounting Skills Competition — First Prize</small></div></li>
+        <li><span>2023</span><div>校级一等奖学金<small>First-Class Scholarship, campus level</small></div></li>
+        <li><span>2023</span><div>校级「三好学生」<small>“Merit Student”, campus level</small></div></li>
+        <li><span>—</span><div>大学英语六级 538 分<small>CET-6 · 538</small></div></li>
+        <li><span>—</span><div>计算机二级证书（MS Office）<small>NCRE Level 2 Certificate — MS Office</small></div></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 04 联系 ===== -->
+<section class="sec" id="contact">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="num">04</span>
+      <h2 class="sec-title">联系 <span class="en">Contact</span></h2>
+      <span class="sec-meta">Objective · Design Assistant</span>
+    </div>
+
+    <div class="about">
+      <p class="statement reveal">艺术设计专业在读，性格踏实，执行强、学得快。习惯把模糊的需求拆成可执行的步骤：<em>先定概念与廓形</em>，再落到版型、尺寸和工艺。对接修改意见时表达直接、反馈及时，多轮返工也能稳住节奏。</p>
+
+      <div class="contact reveal">
+        <a class="mail" href="mailto:1296749261@qq.com"><span>Email<i>邮箱</i></span>1296749261@qq.com</a>
+        <div class="contact-row"><span class="lab">电话<i>Phone</i></span><span class="val">159 7825 9973</span></div>
+        <div class="contact-row"><span class="lab">城市<i>City</i></span><span class="val">南宁 · 广西 <small>Nanning</small></span></div>
+        <div class="contact-row"><span class="lab">意向<i>Objective</i></span><span class="val">设计师助理 · 时装设计方向</span></div>
+        <p class="en-txt" style="margin-top:14px;font-size:11.5px;line-height:1.7;color:var(--muted);">Studying art &amp; design. Steady, fast to execute, quick to learn. I break vague briefs into steps — concept and silhouette first, then pattern, measurements and construction — and stay steady through multiple rounds of revision.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <footer class="foot">
+      <p>梁苏瑜 · 个人作品集名片<i>Liang Suyu · Portfolio Card 2026</i></p>
+      <p>2026 / 作品与文字由本人提供<i>Works and text by the author</i></p>
+    </footer>
+  </div>
+</section>
+
+<!-- ===== 灯箱 ===== -->
+<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="作品大图">
+  <div class="lb-bar">
+    <span class="lb-idx" id="lbIdx">01</span>
+    <span class="lb-cap" id="lbCap"></span>
+    <button class="lb-close" id="lbClose" type="button">关闭 Esc</button>
+  </div>
+  <div class="lb-stage"><img id="lbImg" alt=""></div>
+  <div class="lb-foot">点背景或按 Esc 关闭 · Liang Suyu Portfolio 2026</div>
+</div>
+
+<script>
+(function(){
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* 滚动显现 */
+  var items = document.querySelectorAll('.reveal');
+  if (reduce || !('IntersectionObserver' in window)) {
+    items.forEach(function(el){ el.classList.add('in'); });
+  } else {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); }
+      });
+    }, { rootMargin: '0px 0px -6% 0px', threshold: 0.08 });
+    items.forEach(function(el){ io.observe(el); });
+  }
+
+  /* 导航当前区块 */
+  var links = Array.prototype.slice.call(document.querySelectorAll('.nav a'));
+  var secs = links.map(function(a){ return document.querySelector(a.getAttribute('href')); }).filter(Boolean);
+  if ('IntersectionObserver' in window) {
+    var no = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if (!en.isIntersecting) return;
+        links.forEach(function(a){ a.classList.toggle('active', a.getAttribute('href') === '#' + en.target.id); });
+      });
+    }, { rootMargin: '-45% 0px -50% 0px' });
+    secs.forEach(function(s){ no.observe(s); });
+  }
+
+  /* 灯箱 */
+  var lb = document.getElementById('lb');
+  var lbImg = document.getElementById('lbImg');
+  var lbIdx = document.getElementById('lbIdx');
+  var lbCap = document.getElementById('lbCap');
+  var lbClose = document.getElementById('lbClose');
+  var lastFocus = null;
+
+  function openLb(el){
+    lastFocus = el;
+    lbImg.src = el.getAttribute('data-src');
+    lbImg.alt = el.getAttribute('aria-label') ? el.getAttribute('aria-label').replace('放大查看：', '') : '';
+    lbIdx.textContent = el.getAttribute('data-idx');
+    lbCap.textContent = el.getAttribute('data-cap');
+    lb.hidden = false;
+    document.body.classList.add('lock');
+    lbClose.focus();
+  }
+  function closeLb(){
+    lb.hidden = true;
+    lbImg.removeAttribute('src');
+    document.body.classList.remove('lock');
+    if (lastFocus) lastFocus.focus();
+  }
+
+  document.querySelectorAll('.work').forEach(function(el){
+    el.addEventListener('click', function(){ openLb(el); });
+    el.addEventListener('keydown', function(e){
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openLb(el); }
+    });
+  });
+  lbClose.addEventListener('click', closeLb);
+  lb.addEventListener('click', function(e){ if (e.target === lb || e.target.classList.contains('lb-stage')) closeLb(); });
+  document.addEventListener('keydown', function(e){
+    if (!lb.hidden && e.key === 'Escape') closeLb();
+  });
+})();
+</script>
+</body>
+</html>
